@@ -35,14 +35,14 @@
         "from_node": "出发点",
         "to_node": "到达点",
         "day": "发生日",
-        "weather": "共同天气条件",
         "minutes": "实际分钟",
         "known_at": "记录获知时间",
-        "fold": "独立日期核对范围"
+        "fold": "独立日期核对范围",
+        "road_condition": "共同路面情况：rain表示雨天，dry表示未记录降雨"
       },
       "path": "data/travel.jsonl",
       "rows": 350,
-      "sha256": "57111b2221d15a98ae171b8ced5813aa1aa18628328c298a1ebdf499b5705633"
+      "sha256": "4b613f12ddfe710057db1eb5fae4ffd966ac8b046c3d82438e756ba2ded6ed6a"
     },
     {
       "name": "stops",
@@ -57,12 +57,12 @@
         "uncollected_kg": "已知未收量，未观察为空",
         "minutes": "实际停留",
         "status": "完成部分取消或未遇",
-        "weather": "共同天气",
-        "known_at": "到达时间"
+        "known_at": "到达时间",
+        "road_condition": "共同路面情况：rain表示雨天，dry表示未记录降雨"
       },
       "path": "data/stops.jsonl",
       "rows": 160,
-      "sha256": "387bc67570d94294c102357071afba7affaba385388600d5e5f3cae0c263615a"
+      "sha256": "92ae08961f1fc3abf8fdaff269f213044ae6352ff3501cc4edc1652641331071"
     },
     {
       "name": "vehicles",

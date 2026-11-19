@@ -34,7 +34,7 @@
 | from_node | 出发点 |
 | to_node | 到达点 |
 | day | 发生日 |
-| weather | 共同天气条件 |
+| road_condition | 共同路面情况：rain表示雨天，dry表示未记录降雨 |
 | minutes | 实际分钟 |
 | known_at | 记录获知时间 |
 | fold | 独立日期核对范围 |
@@ -51,7 +51,7 @@
 | uncollected_kg | 已知未收量，未观察为空 |
 | minutes | 实际停留 |
 | status | 完成部分取消或未遇 |
-| weather | 共同天气 |
+| road_condition | 共同路面情况：rain表示雨天，dry表示未记录降雨 |
 | known_at | 到达时间 |
 
 ### vehicles
