@@ -1,0 +1,123 @@
+{
+  "project": "mobile-collection-promises",
+  "version": "2026-09-synthetic-v1",
+  "synthetic": true,
+  "tables": [
+    {
+      "name": "bookings",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "预约身份",
+        "home": "合成居民",
+        "node": "停靠地点",
+        "category": "品类",
+        "weight_low_kg": "重量下界",
+        "weight_high_kg": "重量上界",
+        "volume_low_m3": "体积下界",
+        "volume_high_m3": "体积上界",
+        "day": "服务日",
+        "window_start": "窗口起点",
+        "window_end": "窗口终点",
+        "confirmed": "已形成居民承诺",
+        "flexible_days": "允许改约范围"
+      },
+      "path": "data/bookings.jsonl",
+      "rows": 24,
+      "sha256": "f0d35c9b00b317a711a9aaa6577161b3c256865eb52ac581439d84650ac57303"
+    },
+    {
+      "name": "travel",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "路段观察",
+        "from_node": "出发点",
+        "to_node": "到达点",
+        "day": "发生日",
+        "weather": "共同天气条件",
+        "minutes": "实际分钟",
+        "known_at": "记录获知时间",
+        "fold": "独立日期核对范围"
+      },
+      "path": "data/travel.jsonl",
+      "rows": 350,
+      "sha256": "57111b2221d15a98ae171b8ced5813aa1aa18628328c298a1ebdf499b5705633"
+    },
+    {
+      "name": "stops",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "停靠观察",
+        "node": "地点",
+        "day": "发生日",
+        "booked_kg": "已约量",
+        "loaded_kg": "实装量，缺回执为空",
+        "uncollected_kg": "已知未收量，未观察为空",
+        "minutes": "实际停留",
+        "status": "完成部分取消或未遇",
+        "weather": "共同天气",
+        "known_at": "到达时间"
+      },
+      "path": "data/stops.jsonl",
+      "rows": 160,
+      "sha256": "387bc67570d94294c102357071afba7affaba385388600d5e5f3cae0c263615a"
+    },
+    {
+      "name": "vehicles",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "车辆",
+        "weight_kg": "载重上限",
+        "volume_m3": "体积上限",
+        "categories": "允许品类",
+        "incompatible_pairs": "不能混载的品类对",
+        "max_storage_minutes": "分品类最长在途暂存",
+        "start_node": "起点",
+        "shift_start": "开班",
+        "shift_end": "结束",
+        "cost_cents": "班次成本"
+      },
+      "path": "data/vehicles.jsonl",
+      "rows": 3,
+      "sha256": "958086ba246c4f9d7d869725548425097b1baf00ed2f20536a2f97186106d561"
+    },
+    {
+      "name": "destinations",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "接收点窗口",
+        "node": "地点",
+        "day": "接收日",
+        "categories": "接收品类",
+        "open": "开门",
+        "close": "关门",
+        "max_kg": "该窗口共享最大接收量",
+        "unload_minutes": "每车卸料时间",
+        "cost_cents_per_kg": "处理单价"
+      },
+      "path": "data/destinations.jsonl",
+      "rows": 3,
+      "sha256": "f908cdb4c271ef00c9b3e1ae495475b0b0c8f37f0006b07fa1641c4a1d84a72e"
+    },
+    {
+      "name": "live_events",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "现场回执",
+        "kind": "停靠装车或接收点变更",
+        "target": "作用预约或窗口",
+        "occurred_at": "发生时间",
+        "known_at": "到达时间",
+        "payload": "对应实际字段"
+      },
+      "path": "data/live_events.jsonl",
+      "rows": 2,
+      "sha256": "ff55b9f62ce114315b3c82db26bbeeba911e24ae391b290d25a407d9181e6be6"
+    }
+  ]
+}

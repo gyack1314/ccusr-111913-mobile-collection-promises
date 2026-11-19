@@ -1,0 +1,2 @@
+{"id":"E1","kind":"loaded","target":"B003","occurred_at":"2026-09-22T10:00:00+08:00","known_at":"2026-09-22T10:01:00+08:00","payload":{"vehicle":"V1","weight_kg":45,"volume_m3":0.5,"category":"paper"}}
+{"id":"E2","kind":"destination_closed","target":"U1","occurred_at":"2026-09-22T10:30:00+08:00","known_at":"2026-09-22T10:31:00+08:00","payload":{"reason":"临时维护"}}
